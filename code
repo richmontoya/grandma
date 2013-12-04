@@ -1,0 +1,14 @@
+puts 'Howdy, young man, give grandma a hug!'
+while true 
+ said = gets.chomp
+ if said == 'Bye' 
+  puts 'Later, Sugar!' 
+  break 
+ end
+ if said != said.upcase 
+  puts 'HUH?! speak up, Sonny!' 
+ else 
+ random_year = 1930 + rand(21) 
+ puts 'Nope, not since ' + random_year.to_s + '!' 
+ end 
+end
